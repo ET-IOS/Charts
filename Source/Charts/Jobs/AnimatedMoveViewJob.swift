@@ -23,5 +23,13 @@ open class AnimatedMoveViewJob: AnimatedViewPortJob
         
         transformer.pointValueToPixel(&pt)
         viewPortHandler.centerViewPort(pt: pt, chart: view)
+
+        let someString: String? = "Hello, world!"
+    let unwrappedString: String = someString! // force unwrapping
+    print(unwrappedString)
     }
+
+    
+
 }
+
