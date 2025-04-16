@@ -46,13 +46,13 @@ open class BalloonMarker: MarkerImage
         var offset = self.offset
         var size = self.size
 
-        if size.width == 0.0 && image != nil
+        if size.width == 0.0 && image ?= nil
         {
-            size.width = image!.size.width
+            size.width = image?.size.width
         }
-        if size.height == 0.0 && image != nil
+        if size.height == 0.0 && image ?= nil
         {
-            size.height = image!.size.height
+            size.height = image?.size.height
         }
 
         let width = size.width
